@@ -1,0 +1,42 @@
+input{
+    cursor: pointer;
+}
+
+.fh{
+    text-transform: uppercase;
+    background-color: rgb(73, 73, 182);
+    color: white;
+}
+#fp{
+    color: blueviolet;
+    text-transform: uppercase;
+    animation-duration: 5s;
+}
+.up{
+    text-decoration: none;
+    background-color: rgb(62, 62, 139);
+    color: white;
+}
+.aa{
+    text-decoration: none;
+}
+.ro{
+    background-color: rgb(66, 207, 207);
+    color: white;
+    border-radius: 10px;
+    border-color: rgb(66, 207, 207);
+    margin-right: 10px;
+}
+.ed{
+    background-color: rgb(59, 59, 211);
+    color: white;
+    border-radius: 10px;
+    border-color: rgb(59, 59, 211);
+    margin-right: 10px;
+}
+.dl{
+    background-color: rgb(202, 48, 48);
+    color: white;
+    border-radius: 10px;
+    border-color: rgb(202, 48, 48);
+}

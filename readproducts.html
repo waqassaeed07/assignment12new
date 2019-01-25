@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>readproducts</title>
+    <link rel="stylesheet" href="new12.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="fh">Read products</h1>
+                <hr>
+
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 col-sm-4">
+                <button class="up">
+                    <a class="aa">Create Products</a>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!--input -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12" >
+                <form action="javascript:void(0);" onsubmit="addItem()" >
+                    <input type="text" id="name" placeholder="New item">
+                    <input type="text" id="des" placeholder="New description">
+                    <input type="number" id="qua" placeholder="Quantity">
+                    <input type="number" id="pri" placeholder="price">
+                    <input type="text" id="cate" placeholder="Category">
+                    <input type="submit" value="ADD ITEM" id="submitbutton">
+                </form>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Edit -->
+                <div id="spoiler" style="color: brown; display: none" role="aria-hidden">
+                    <form action="javascript:void(0);" method="POST" id="saveEdit" onsubmit="saveEdit()">
+
+                        <input type="text" id="edit-name">
+                        <input type="text" id="edit-des">
+                        <input type="number" id="edit-qua">
+                        <input type="number" id="edit-pri">
+                        <input type="text" id="edit-cate">
+                        <input type="submit" value="update" />
+                        <a onclick="CloseInput()" aria-label="Close">&#10006;</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+
+                <table class="table table-bordered">
+                    <tr>
+                        <th>
+                            Name
+                        </th>
+                        <th>
+                            Description
+                        </th>
+                        <th>
+                            Quantity
+                        </th>
+                        <th>
+                            Price
+                        </th>
+                        <th>
+                            Catagory
+                        </th>
+                        <th>
+                            Action
+                        </th>
+                        <th>
+                            Action
+                        </th>
+                    </tr>
+                    <tbody id="addallitems">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="assign12.js"></script>
+    <!-- <script src="new12.js"></script> -->
+</body>
+
+</html>
